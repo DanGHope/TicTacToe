@@ -1,3 +1,5 @@
+//Dan Hope - 100453916
+
 var cells;
 var curTurn;
 var gameOver;

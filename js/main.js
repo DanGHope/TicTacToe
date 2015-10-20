@@ -67,6 +67,24 @@ function checkWin() {
 		}
 	}
 
+	//Check Diagnal \
+	for ( n = 0; n < 9 ; n+=4){
+		if(cells[n].innerHTML != curTurn){
+			break;
+		}else if(n==8){
+			return curTurn;
+		}
+	}
+	
+	//Check Diagnal /
+	for ( n = 2; n < 7 ; n+=2){
+		if(cells[n].innerHTML != curTurn){
+			break;
+		}else if(n==6){
+			return curTurn;
+		}
+	}
+
 	//Check Tie
 	for ( i = 0; i < 9; i++) {
 		if (cells[i].innerHTML == "&nbsp;") {
